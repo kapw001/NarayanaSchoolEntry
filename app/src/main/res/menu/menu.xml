@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/button_item"
+        android:title=""
+        app:actionLayout="@layout/button_layout"
+        app:showAsAction="always"
+        />
+
+
+    <!--<item-->
+        <!--android:id="@+id/logout_IV"-->
+        <!--android:title=""-->
+        <!--app:actionLayout="@layout/logout_button_layout"-->
+        <!--app:showAsAction="always"-->
+        <!--android:tooltipText="Logout"-->
+        <!--/>-->
+
+</menu>

@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="12dp"
+    android:layout_marginLeft="12dp"
+    tools:context=".Fragments.ViewDetails.ViewDetailsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.2"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:text="Categories"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.8"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:text="Count"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.40"
+            >
+
+            <TextView
+                android:fontFamily="@fonts/helvatica"
+                android:paddingLeft="6dp"
+                android:layout_margin="3dp"
+                android:text="State"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.20"
+            >
+
+
+        <!--<TextView-->
+            <!--android:fontFamily="@fonts/helvatica"-->
+            <!--android:paddingLeft="6dp"-->
+            <!--android:layout_margin="3dp"-->
+            <!--android:text="State"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <Spinner
+            android:background="@drawable/spinner_bg"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:id="@+id/state_Spinner_ID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="-"
+                    android:id="@+id/Count_TV_ID"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.40"
+            >
+
+            <TextView
+                android:fontFamily="@fonts/helvatica"
+                android:paddingLeft="6dp"
+                android:layout_margin="3dp"
+                android:text="District"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.20"
+                >
+
+
+                <!--<TextView-->
+                <!--android:fontFamily="@fonts/helvatica"-->
+                <!--android:paddingLeft="6dp"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:text="State"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+                <Spinner
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:id="@+id/District_Spinner_ID"
+                    android:background="@drawable/spinner_bg"
+                    android:minHeight="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="-"
+                    android:id="@+id/Count_district_TV"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:text="Urban"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="City"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.20"
+                >
+
+
+                <!--<TextView-->
+                <!--android:fontFamily="@fonts/helvatica"-->
+                <!--android:paddingLeft="6dp"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:text="State"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+                <Spinner
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/spinner_bg"
+                    android:minHeight="40dp"
+                    android:id="@+id/City_Spinner_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="-"
+                    android:id="@+id/City_count_TV"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="Ward"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.20"
+                >
+
+
+                <!--<TextView-->
+                <!--android:fontFamily="@fonts/helvatica"-->
+                <!--android:paddingLeft="6dp"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:text="State"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+                <Spinner
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/spinner_bg"
+                    android:minHeight="40dp"
+                    android:id="@+id/Ward_Spinner_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="-"
+                    android:id="@+id/Count_ward_TV"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="Area"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.20"
+                >
+
+
+                <!--<TextView-->
+                <!--android:fontFamily="@fonts/helvatica"-->
+                <!--android:paddingLeft="6dp"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:text="State"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+                <Spinner
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/spinner_bg"
+                    android:minHeight="40dp"
+                    android:id="@+id/Area_Spinner_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="-"
+                    android:id="@+id/Count_area_TV"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:text="Rural"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="Mandal"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.20"
+                >
+
+
+                <!--<TextView-->
+                <!--android:fontFamily="@fonts/helvatica"-->
+                <!--android:paddingLeft="6dp"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:text="State"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+                <Spinner
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/spinner_bg"
+                    android:minHeight="40dp"
+                    android:id="@+id/Mandal_Spinner_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="-"
+                    android:id="@+id/Count_mandal_TV"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="Village"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.20"
+                >
+
+
+                <!--<TextView-->
+                <!--android:fontFamily="@fonts/helvatica"-->
+                <!--android:paddingLeft="6dp"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:text="State"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+                <Spinner
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/spinner_bg"
+                    android:minHeight="40dp"
+                    android:id="@+id/Village_Spinner_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.40"
+                >
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="-"
+                    android:id="@+id/Count_Village_TV"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:fontFamily="@fonts/helvatica"-->
+            <!--android:paddingLeft="6dp"-->
+            <!--android:layout_margin="3dp"-->
+            <!--android:text="District"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+
+<!--<android.support.v7.widget.CardView-->
+    <!--android:layout_margin="20dp"-->
+    <!--app:cardCornerRadius="3dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+    <!--<TextView-->
+        <!--android:layout_margin="4dp"-->
+        <!--android:text="Number of entries"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="16dp"-->
+        <!--android:fontFamily="@fonts/helvatica"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<TextView-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="0"-->
+        <!--android:textSize="22dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:fontFamily="@fonts/helvatica"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/Count_TV_ID"-->
+
+        <!--/>-->
+
+    <!--</LinearLayout>-->
+
+<!--</android.support.v7.widget.CardView>-->
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:paddingLeft="6dp"
+                android:layout_margin="3dp"
+                android:text="Select City"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:paddingLeft="6dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/spinner_bg"
+                android:minHeight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Spinner>
+
+            <TextView
+                android:paddingLeft="6dp"
+                android:layout_margin="3dp"
+                android:text="Select Ward"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:paddingLeft="6dp"
+                android:layout_margin="3dp"
+                android:minHeight="30dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Students List"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+
+                />
+            <View
+                android:background="#CCC"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Student_List_RV_ID">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,41 @@
+package apps.pappaya.narayanaschoolentry.Common;
+
+import android.content.Context;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+
+/**
+ * Created by Samsung on 11/5/2015.
+ */
+public class VolleySingleton {
+
+    private static VolleySingleton instance;
+    private static Context mCtx;
+    private RequestQueue requestQueue;
+
+    private VolleySingleton(Context context) {
+        mCtx = context;
+        requestQueue = getRequestQueue();
+    }
+
+    public static synchronized VolleySingleton getInstance(Context context) {
+        if (instance == null) {
+            instance = new VolleySingleton(context);
+        }
+        return instance;
+    }
+
+    public RequestQueue getRequestQueue() {
+        if (requestQueue == null) {
+            requestQueue = Volley.newRequestQueue(mCtx.getApplicationContext());
+        }
+        return requestQueue;
+    }
+
+    public <T> void addToRequestQueue(Request<T> req) {
+        req.setTag("App");
+        getRequestQueue().add(req);
+    }
+}

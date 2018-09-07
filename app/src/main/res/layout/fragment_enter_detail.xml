@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="80dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+
+            android:fontFamily="@fonts/helvatica"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course Info"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            />
+
+   <EditText
+       android:paddingLeft="6dp"
+       android:layout_margin="3dp"
+       android:hint="Employee ID"
+       android:visibility="gone"
+       android:background="@drawable/edit_text_bg"
+       android:id="@+id/Employee_ID"
+       android:layout_width="match_parent"
+       android:textSize="13dp"
+
+       android:layout_height="wrap_content" />
+
+   <EditText
+       android:textSize="13dp"
+       android:defaultFocusHighlightEnabled="true"
+       android:shadowColor="@color/colorAccent"
+       android:fontFamily="@fonts/helvatica"
+       android:singleLine="true"
+       android:maxLines="1"
+       android:paddingLeft="6dp"
+       android:layout_margin="3dp"
+       android:hint="Student Name"
+       android:id="@+id/Student_Name_ET"
+       android:background="@drawable/edit_text_bg"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+    <EditText
+        android:textSize="13dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:fontFamily="@fonts/helvatica"
+        android:paddingLeft="6dp"
+        android:layout_margin="3dp"
+        android:hint="Father's Name"
+        android:id="@+id/Father_Name_TV"
+        android:background="@drawable/edit_text_bg"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+        <TextView
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:text="Studying Course"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Spinner
+            android:textSize="13dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:fontFamily="@fonts/helvatica"
+            android:layout_margin="3dp"
+            android:id="@+id/Studying_course_Spinner"
+            android:background="@drawable/spinner_bg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+            <EditText
+                android:layout_weight="0.8"
+                android:textSize="13dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="+91"
+                android:gravity="center"
+                android:inputType="phone"
+                android:enabled="false"
+                android:maxLength="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_weight="0.2"
+                android:textSize="13dp"
+                android:paddingLeft="6dp"
+                android:layout_margin="3dp"
+                android:id="@+id/Mobile_Number_ET"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:text="Gender"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Spinner
+            android:textSize="13dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:fontFamily="@fonts/helvatica"
+            android:layout_margin="3dp"
+            android:id="@+id/Gender_Spinner_ID"
+            android:background="@drawable/spinner_bg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+
+        <TextView
+            android:fontFamily="@fonts/helvatica"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address info"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="10dp"
+            >
+
+
+            <TextView
+                android:fontFamily="@fonts/helvatica"
+                android:layout_weight="0.3"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:paddingLeft="6dp"
+                android:layout_margin="3dp"
+                android:text="Urban"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_compat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:checked="false"
+                android:gravity="center" />
+
+            <TextView
+                android:fontFamily="@fonts/helvatica"
+                android:layout_weight="0.3"
+                android:paddingLeft="36dp"
+                android:layout_margin="3dp"
+                android:text="Rural"
+                android:gravity=""
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:text="State"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:background="@drawable/spinner_bg"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:id="@+id/state_Spinner_ID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+
+
+        <TextView
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:text="District"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:id="@+id/District_Spinner_ID"
+            android:background="@drawable/spinner_bg"
+            android:minHeight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        </Spinner>
+
+        //urban
+            <LinearLayout
+                android:id="@+id/Urban_ID"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="City"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:fontFamily="@fonts/helvatica"
+                    android:id="@+id/City_Spinner_id"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/spinner_bg"
+                    android:minHeight="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="Ward"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:fontFamily="@fonts/helvatica"
+                    android:id="@+id/Ward_Spinner_ID"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/spinner_bg"
+                    android:minHeight="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="Area"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:fontFamily="@fonts/helvatica"
+                    android:id="@+id/Area_Spinner_ID"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/spinner_bg"
+                    android:minHeight="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+
+
+            </LinearLayout>
+        //rural
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Rural_ID"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="Mandal"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:fontFamily="@fonts/helvatica"
+                    android:id="@+id/Mandal_Spinner_ID"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/spinner_bg"
+                    android:minHeight="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:text="Village"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:fontFamily="@fonts/helvatica"
+                    android:id="@+id/Village_Spinner_ID"
+                    android:paddingLeft="6dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/spinner_bg"
+                    android:minHeight="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+
+
+
+            </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ward Details"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            />
+
+                <TextView
+                    android:fontFamily="@fonts/helvatica"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="School Details"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            />
+
+
+
+
+
+        <TextView
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:text="School State"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Spinner
+            android:fontFamily="@fonts/helvatica"
+            android:id="@+id/School_State_Spinner_ID"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/spinner_bg"
+            android:minHeight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:text="School District"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/spinner_bg"
+            android:minHeight="40dp"
+            android:id="@+id/School_District_Spinner_ID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+
+
+        <TextView
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:text="School Mandal"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:fontFamily="@fonts/helvatica"
+            android:id="@+id/School_Mandal_Spinner_ID"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/spinner_bg"
+            android:minHeight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:text="School"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:fontFamily="@fonts/helvatica"
+            android:paddingLeft="6dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/edit_text_bg"
+            android:minHeight="40dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:id="@+id/School_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+
+        <!--<EditText-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="wrap_content" />-->
+
+   <!--<EditText-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="wrap_content" />-->
+
+    <!--<EditText-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="wrap_content" />-->
+
+
+    </LinearLayout>
+
+</ScrollView>

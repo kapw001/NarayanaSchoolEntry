@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".Activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/narayana_logo"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/UserName_ET_ID"
+                android:paddingLeft="12dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:textColorHint="#CCC"
+                android:textColor="#CCC"
+                android:text=""
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_marginBottom="10dp"
+                />
+            <EditText
+                android:text=""
+                android:id="@+id/Password_ET_ID"
+                android:paddingLeft="12dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="#CCC"
+                android:textColor="#CCC"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_marginBottom="24dp"
+                />
+
+            <Button
+                android:background="@drawable/button_login"
+                android:textColor="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/Login_BT_ID"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
